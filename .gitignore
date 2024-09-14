@@ -1,0 +1,69 @@
+# 忽略node_modules目录  
+node_modules/  
+  
+# 忽略public目录，该目录由Hexo生成，包含最终的静态文件  
+public/  
+  
+# 忽略.deploy_git/目录，如果你使用hexo-deployer-git插件部署到GitHub Pages，这个目录可以包含临时的Git仓库信息  
+.deploy_git/  
+  
+# 忽略.next/目录，如果你使用了Next.js或其他可能生成临时目录的插件  
+.next/  
+  
+# 忽略缓存目录和文件  
+db.json  
+*.log  
+*.dump  
+*.pid  
+*.lock  
+  
+# 忽略npm和yarn的依赖锁文件，除非你希望在GitHub上共享这些依赖的确切版本  
+# 如果你选择忽略它们，确保在部署环境中使用`npm ci`或`yarn install --frozen-lockfile`来确保依赖一致性  
+# package-lock.json  
+# yarn.lock  
+  
+# 忽略本地开发配置  
+_config.yml  
+  
+# 如果你有特定的Hexo插件或主题目录，但不想在GitHub上共享它们  
+# themes/my-private-theme/  
+# source/_data/private-data.yml  
+  
+# 忽略IDE或编辑器产生的临时文件  
+.DS_Store  
+*.swp  
+*.swo  
+*.swn  
+*.idea/  
+*.vscode/  
+.project  
+.classpath  
+*.tmproj  
+  
+# 忽略Hexo的source目录下的特定文件或目录，这些可能包含草稿或不应公开的内容  
+# source/_drafts/  
+# source/_posts/some-private-post.md  
+  
+# 忽略构建过程中产生的临时文件或目录  
+.temp/  
+  
+# 忽略Hexo的_site目录（旧版本的Hexo可能使用此目录名）  
+_site/  
+  
+# 忽略其他不需要跟踪的文件或目录  
+*.tmp  
+*.bak  
+*.orig  
+*.rej  
+*.cache  
+*.part  
+*.pyc  
+*.pyo  
+*.egg-info  
+*.dist-info  
+*.egg  
+*.whl  
+  
+# 如果你使用了Hexo的草稿功能，但不想在GitHub上公开草稿文章  
+# 注意：Hexo默认草稿存放在source/_drafts/目录下，但你可能希望更具体地忽略某些文件  
+# source/_drafts/private-draft.md
